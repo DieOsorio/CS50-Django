@@ -3,11 +3,13 @@
 {% block title %}Flight {{ flight.id }}{% endblock %}
 
 {% block body %}
-  <h1>Flight {{ flight.id }}</h1>
+  <h2>Flight</h2>
   <ul>
+    <li>Flight Number: {{ flight.id}}</li>
     <li>Origin: {{ flight.origin }}</li>
     <li>Destination: {{ flight.destination }}</li>
     <li>Duration: {{ flight.duration }} minutes</li>
+    <li>Valid: {{ flight.is_valid_flight }}</li>
   </ul>
   <h2>Passengers</h2>
   <ul>
